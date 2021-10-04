@@ -1,0 +1,20 @@
+#highScoresList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 4rem;
+}
+
+.high-score {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.high-score:hover {
+  color: #4A6FA5;
+}
+.wrapper{
+  overflow:auto;
+  height: 40rem;
+  width: 60rem;
+  margin-bottom: 3rem;
+}

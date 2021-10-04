@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@800&display=swap');
+
+:root {
+    background-color: #DBE9EE;
+    font-size: 62.5%;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+  }
+.btn {
+    font-size: 1.8rem;
+    padding: 1rem 0;
+    width: 20rem;
+    text-align: center;
+    border: 0.1rem solid #4A6FA5;
+    border-radius: .5rem;
+    color: #4F6D7A;
+    background-color: white;
+  }
+  .btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(42, 111, 146, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+  }
+  
+  .btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+  }
+  .container {
+    padding-top: 5%;
+    display : grid;
+    grid-template-rows: auto;
+    gap: 1%;
+    margin: auto;
+    
+}
+  
+  .container > * {
+    width: 100%;
+  }
+  .wrapper{
+      margin-top: 20rem;
+    padding-right: 2rem;
+}
+
+.container > * {
+    width: 100%;
+  }
+  
+ 
+  form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+ #adminPassword{
+    margin-bottom: 1rem;
+    width: 30rem;
+    padding: 1.5rem;
+    font-size: 1.8rem;
+    border: none;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(42, 111, 146, 0.5);
+  }
+  
+  input::placeholder {
+    color: #aaa;
+  }
+  label{
+    font-family: 'Cinzel', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+  }
+  .column1 {
+    grid-column: 1;
+    text-align: center;
+    line-height: 3rem;
+    padding-left: 1rem;
+    padding-top: 1.3rem;
+}
+.row1 {
+    grid-row: 1;
+}
+
+.row2 {
+    grid-row: 2;
+}
+
+.row3 {
+    grid-row: 3;
+}

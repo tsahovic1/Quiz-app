@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin view</title>
+    <link rel="stylesheet" href="addQuestion.css">
+</head>
+
+<body>
+    <div class="top">
+        <a class="home" href="index.html">Home Page</a>
+        <h2 class="headline">Add a question</h2>
+    </div>
+    <form id="form">
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="column1 row1">
+                    <label for="category">Pick a Category</label>
+                </div>
+
+                <div class="column2 row1">
+                    <select id="category" name="category">
+                    </select>
+                </div>
+
+                <div class="column1 row2">
+                    <label for="question">Enter a question:</label>
+                </div>
+
+                <div class="column2 row2">
+                    <input type="text" id="question" name="question" required>
+                </div>
+
+                <div class="column1 row3">
+                    <label for="choice1">First choice:</label>
+                </div>
+
+                <div class="column2 row3">
+                    <input type="text" id="choice1" name="choice1" required>
+                </div>
+
+                <div class="column1 row4">
+                    <label for="choice2">Second choice:</label>
+                </div>
+
+                <div class="column2 row4">
+                    <input type="text" id="choice2" name="choice2" required>
+                </div>
+
+                <div class="column1 row5">
+                    <label for="choice3">Third choice:</label>
+                </div>
+
+                <div class="column2 row5">
+                    <input type="text" id="choice3" name="choice3" required>
+                </div>
+                <div class="column1 row6">
+                    <label for="choice4">Fourth choice:</label>
+                </div>
+
+                <div class="column2 row6">
+                    <input type="text" id="choice4" name="choice4" required>
+                </div>
+                <div class="column1 row7">
+                    <label for="answer">Correct answer number:</label>
+                </div>
+
+                <div class="column2 row7">
+                    <input type="text" id="answer" name="answer" required>
+                </div>
+                <div class="column1 row8">
+
+                </div>
+
+                <div class="column2 row8">
+                    <input class="btn" type="submit" value="Add Question">
+                </div>
+
+            </div>
+        </div>
+    </form>
+    <div class="addCategory">
+        <h2 class="headline">Add a Category</h2>
+        <form id="formCateg">
+            <div class="wrapper">
+                <input type="text" id="categ" name="categ" required>
+                <input class="btn" type="submit" value="Add Category">
+            </div>
+        </form>
+    </div>
+    <div class="forList">
+        <h2 class="headline">All Questions</h2>
+        <div class="wrapperQues">
+            <ol id="questionsList"></ol>
+        </div>
+    </div>
+    <script src="addQuestion.js"></script>
+</body>
+
+</html>
